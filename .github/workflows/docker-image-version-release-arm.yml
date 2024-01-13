@@ -24,7 +24,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: /apps/web/Dockerfile
+          file: ./apps/web/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: hedlund01/rallly:latest
